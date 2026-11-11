@@ -11,27 +11,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Proffy">
+
+        <activity
+            android:name=".ui.forgot.ForgotPasswordActivity"
+            android:exported="false" />
+
         <activity
             android:name=".ui.finallyComponent.FinallyActivity"
             android:exported="false" />
+
         <activity
             android:name=".ui.register.RegisterStepTwoActivity"
             android:exported="false" />
+
         <activity
             android:name=".ui.register.RegisterStepOneActivity"
             android:exported="false" />
+
         <activity
             android:name=".ui.login.LoginActivity"
             android:exported="false" />
+
         <activity
             android:name=".ui.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
+
 
 </manifest>

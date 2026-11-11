@@ -1,64 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.finallyComponent.FinallyActivity"
-    android:background="@color/purple">
+    android:background="@color/purple"
+    tools:context=".ui.finallyComponent.FinallyActivity">
 
     <ImageView
         android:id="@+id/imageViewBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="190dp"
         android:src="@drawable/background_flow_completed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="190dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:id="@+id/containerBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="180dp"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="180dp"
-        android:layout_marginBottom="180dp"
-        android:gravity="center_horizontal">
+        app:layout_constraintEnd_toEndOf="parent">
+
         <ImageView
             android:id="@+id/imageViewDone"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/done"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/done" />
 
         <TextView
             android:id="@+id/textViewTitleFinally"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Cadastro\nconcluído!"
+            android:layout_marginBottom="16dp"
             android:fontFamily="@font/poppins_semibold"
-            android:textSize="32sp"
-            android:textColor="@color/text_in_purple_title"
+            android:text="@string/finally_title"
             android:textAlignment="center"
-            android:layout_marginBottom="16dp" />
+            android:textColor="@color/text_in_purple_title"
+            android:textSize="28sp" />
 
         <TextView
             android:id="@+id/textViewSubtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Agora você faz parte da\nplataforma da Proffy"
-            android:textAlignment="center"
             android:fontFamily="@font/poppins"
-            android:textSize="14sp"
-            android:textColor="@color/text_in_purple_base" />
+            android:text="@string/finally_subtitle"
+            android:textAlignment="center"
+            android:textColor="@color/text_in_purple_base"
+            android:textSize="14sp" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonBackToLogin"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/green"
+        android:elevation="0dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:stateListAnimator="@null"
+        android:text="@string/finally_button"
+        android:textAllCaps="false"
+        android:textColor="@color/shape_01_white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

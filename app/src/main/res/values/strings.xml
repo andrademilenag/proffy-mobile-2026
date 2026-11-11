@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Proffy</string>
+
+    <!-- Recuperação de senha -->
+    <string name="forgot_title">Esqueceu sua senha?</string>
+    <string name="forgot_subtitle">Não esquenta, vamos dar um jeito nisso.</string>
+    <string name="forgot_email_hint">E-mail</string>
+    <string name="forgot_button_disabled">Entrar</string>
+    <string name="forgot_button_enabled">Enviar</string>
+    <string name="forgot_email_error">Digite um e-mail válido.</string>
+    <string name="forgot_header_subtitle">Sua plataforma de estudos online.</string>
+
+    <!-- Conclusão -->
+    <string name="finally_title">Solicitação concluída!</string>
+    <string name="finally_subtitle">Verifique seu e-mail para continuar a recuperação da senha.</string>
+    <string name="finally_button">Voltar ao login</string>
 </resources>

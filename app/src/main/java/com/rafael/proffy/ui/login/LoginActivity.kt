@@ -1,5 +1,6 @@
 package com.rafael.proffy.ui.login
 
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -9,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.rafael.proffy.R
 import com.rafael.proffy.databinding.ActivityLoginBinding
 import com.rafael.proffy.ui.register.RegisterStepOneActivity
+import com.rafael.proffy.ui.forgot.ForgotPasswordActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -32,7 +34,15 @@ class LoginActivity : AppCompatActivity() {
         buttonRegister.setOnClickListener {
             handleRegister()
         }
+
+
+    val buttonForgot = binding.buttonForgot
+
+    buttonForgot.setOnClickListener {
+        val intent = Intent(this, ForgotPasswordActivity::class.java)
+        startActivity(intent)
     }
+}
 
     private fun handleRegister() {
         val intent = Intent(this, RegisterStepOneActivity::class.java)
